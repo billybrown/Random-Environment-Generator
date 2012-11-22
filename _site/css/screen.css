@@ -1,0 +1,610 @@
+/* line 6, ../sass/_normalize.sass */
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
+  display: block;
+}
+
+/* line 10, ../sass/_normalize.sass */
+audio, canvas, video {
+  display: inline-block;
+}
+
+/* line 17, ../sass/_normalize.sass */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/* line 23, ../sass/_normalize.sass */
+[hidden] {
+  display: none;
+}
+
+/* line 33, ../sass/_normalize.sass */
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/* line 39, ../sass/_normalize.sass */
+html, button, input, select, textarea {
+  font-family: sans-serif;
+}
+
+/* line 43, ../sass/_normalize.sass */
+body {
+  margin: 0;
+}
+
+/* line 51, ../sass/_normalize.sass */
+a:focus {
+  outline: thin dotted;
+}
+
+/* line 56, ../sass/_normalize.sass */
+a:active, a:hover {
+  outline: 0;
+}
+
+/* line 65, ../sass/_normalize.sass */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/* line 69, ../sass/_normalize.sass */
+b, strong {
+  font-weight: bold;
+}
+
+/* line 72, ../sass/_normalize.sass */
+blockquote {
+  margin: 1em 40px;
+}
+
+/* line 76, ../sass/_normalize.sass */
+dfn {
+  font-style: italic;
+}
+
+/* line 80, ../sass/_normalize.sass */
+mark {
+  background: yellow;
+  color: black;
+}
+
+/* line 85, ../sass/_normalize.sass */
+p, pre {
+  margin: 0 0 0.7em 0;
+}
+
+/* line 89, ../sass/_normalize.sass */
+code, kbd, pre, samp {
+  font-family: monospace, serif;
+  _font-family: "courier new", monospace;
+  font-size: 1em;
+}
+
+/* line 95, ../sass/_normalize.sass */
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/* line 101, ../sass/_normalize.sass */
+q {
+  quotes: none;
+}
+
+/* line 105, ../sass/_normalize.sass */
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+/* line 109, ../sass/_normalize.sass */
+small {
+  font-size: 75%;
+}
+
+/* line 113, ../sass/_normalize.sass */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 119, ../sass/_normalize.sass */
+sup {
+  top: -0.5em;
+}
+
+/* line 122, ../sass/_normalize.sass */
+sub {
+  bottom: -0.25em;
+}
+
+/* line 131, ../sass/_normalize.sass */
+dl, menu, ol, ul, dd {
+  margin: 0 0 15px 40px;
+}
+
+/* line 136, ../sass/_normalize.sass */
+menu, ol, ul {
+  padding: 0;
+}
+
+/* line 140, ../sass/_normalize.sass */
+nav ul, nav ol, .no-list {
+  list-style: none;
+  list-style-image: none;
+  margin: 0;
+}
+
+/* line 153, ../sass/_normalize.sass */
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
+
+/* line 158, ../sass/_normalize.sass */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* line 166, ../sass/_normalize.sass */
+figure {
+  margin: 0;
+}
+
+/* line 175, ../sass/_normalize.sass */
+form {
+  margin: 0;
+}
+
+/* line 179, ../sass/_normalize.sass */
+fieldset {
+  padding: 5px 20px 10px;
+  border: 1px solid #888888;
+  margin: 0;
+}
+
+/* line 187, ../sass/_normalize.sass */
+legend {
+  border: 0;
+  padding: 0;
+  white-space: normal;
+}
+
+/* line 196, ../sass/_normalize.sass */
+button, input, select, textarea {
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+}
+
+/* line 203, ../sass/_normalize.sass */
+button, input {
+  line-height: normal;
+}
+
+/* line 210, ../sass/_normalize.sass */
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+/* line 216, ../sass/_normalize.sass */
+button[disabled], input[disabled] {
+  cursor: default;
+}
+
+/* line 222, ../sass/_normalize.sass */
+input[type="checkbox"], input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+/* line 230, ../sass/_normalize.sass */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+/* line 237, ../sass/_normalize.sass */
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/* line 241, ../sass/_normalize.sass */
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* line 247, ../sass/_normalize.sass */
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+
+/* line 257, ../sass/_normalize.sass */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 13, ../sass/_html5base.sass */
+html, button, input, select, textarea {
+  color: #222222;
+}
+
+/* line 16, ../sass/_html5base.sass */
+body {
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/* line 26, ../sass/_html5base.sass */
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/* line 30, ../sass/_html5base.sass */
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/* line 38, ../sass/_html5base.sass */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/* line 51, ../sass/_html5base.sass */
+img {
+  vertical-align: middle;
+}
+
+/* line 59, ../sass/_html5base.sass */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 69, ../sass/_html5base.sass */
+textarea {
+  resize: vertical;
+}
+
+/* line 77, ../sass/_html5base.sass */
+.chromeframe {
+  margin: 0.2em 0;
+  background: #cccccc;
+  color: black;
+  padding: 0.2em 0;
+}
+
+/* line 14, ../sass/screen.sass */
+.big-text, .answer input, #spokenword {
+  font-size: 50px;
+  font-family: Georgia;
+  text-align: center;
+}
+
+/* line 19, ../sass/screen.sass */
+body {
+  background: #42bb7b;
+}
+
+/* line 22, ../sass/screen.sass */
+.main {
+  background: #f2ab00;
+  padding: 50px 0 80px;
+  margin: 100px 0 0 0;
+  position: relative;
+}
+
+/* line 28, ../sass/screen.sass */
+.answer {
+  padding: 20px 10%;
+}
+/* line 31, ../sass/screen.sass */
+.answer input {
+  background: none;
+  border: none;
+  border-bottom: 5px solid black;
+  width: 100%;
+  padding: 10px 10px 8px;
+  -webkit-transition: background 0.3s linear;
+  -moz-transition: background 0.3s linear;
+  -ms-transition: background 0.3s linear;
+  -o-transition: background 0.3s linear;
+  transition: background 0.3s linear;
+}
+/* line 40, ../sass/screen.sass */
+.answer input:focus {
+  outline: none;
+  background: #ffc73f;
+}
+
+/* line 44, ../sass/screen.sass */
+#spokenword {
+  position: absolute;
+  top: 30px;
+  opacity: 1;
+  padding: 0 10%;
+  width: 80%;
+  -webkit-transition: opacity 0.3s linear;
+  -moz-transition: opacity 0.3s linear;
+  -ms-transition: opacity 0.3s linear;
+  -o-transition: opacity 0.3s linear;
+  transition: opacity 0.3s linear;
+}
+/* line 53, ../sass/screen.sass */
+#spokenword.hide {
+  opacity: 0;
+}
+
+/* line 60, ../sass/screen.sass */
+.tile, .sky, .tl, .t, .tr, .ml, .mr, .m, .m2, .bl, .b, .bur, .bul, .bu, .br, .cornerl, .cornerr, .cornerrb, .cornerlb {
+  width: 25px;
+  height: 25px;
+  float: left;
+}
+
+/* line 65, ../sass/screen.sass */
+.sky {
+  background: #cffffa;
+}
+
+/* line 69, ../sass/screen.sass */
+.tl {
+  background: url("../img/tree_tl.png");
+}
+
+/* line 73, ../sass/screen.sass */
+.t {
+  background: url("../img/tree_t.png");
+}
+
+/* line 77, ../sass/screen.sass */
+.tr {
+  background: url("../img/tree_tr.png");
+}
+
+/* line 81, ../sass/screen.sass */
+.ml {
+  background: url("../img/tree_ml.png");
+}
+
+/* line 85, ../sass/screen.sass */
+.mr {
+  background: url("../img/tree_mr.png");
+}
+
+/* line 89, ../sass/screen.sass */
+.m {
+  background: url("../img/tree_m.png");
+}
+
+/* line 93, ../sass/screen.sass */
+.m2 {
+  background: url("../img/tree_m2.png");
+}
+
+/* line 97, ../sass/screen.sass */
+.bl {
+  background: url("../img/tree_bl.png");
+}
+
+/* line 101, ../sass/screen.sass */
+.b {
+  background: url("../img/tree_b.png");
+}
+
+/* line 105, ../sass/screen.sass */
+.bur {
+  background: url("../img/tree_bur.png");
+}
+
+/* line 109, ../sass/screen.sass */
+.bul {
+  background: url("../img/tree_bul.png");
+}
+
+/* line 113, ../sass/screen.sass */
+.bu {
+  background: url("../img/tree_bu.png");
+}
+
+/* line 117, ../sass/screen.sass */
+.br {
+  background: url("../img/tree_br.png");
+}
+
+/* line 121, ../sass/screen.sass */
+.cornerl {
+  background: url("../img/tree_cornerl.png");
+}
+
+/* line 125, ../sass/screen.sass */
+.cornerr {
+  background: url("../img/tree_cornerr.png");
+}
+
+/* line 129, ../sass/screen.sass */
+.cornerrb {
+  background: url("../img/tree_cornerl.png");
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+/* line 134, ../sass/screen.sass */
+.cornerlb {
+  background: url("../img/tree_cornerr.png");
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+/* line 139, ../sass/screen.sass */
+.row {
+  overflow: hidden;
+  *zoom: 1;
+}
+
+/* line 9, ../sass/_helper.sass */
+.ir {
+  background-color: transparent;
+  border: 0;
+  overflow: hidden;
+  /* IE 6/7 fallback */
+  *text-indent: -9999px;
+}
+
+/* line 17, ../sass/_helper.sass */
+.ir:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 100%;
+}
+
+/* line 28, ../sass/_helper.sass */
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+/* line 37, ../sass/_helper.sass */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/* line 53, ../sass/_helper.sass */
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+/* line 67, ../sass/_helper.sass */
+.invisible {
+  visibility: hidden;
+}
+
+/* line 83, ../sass/_helper.sass */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+/* line 89, ../sass/_helper.sass */
+.clearfix:after {
+  clear: both;
+}
+
+/* line 98, ../sass/_helper.sass */
+.clearfix {
+  *zoom: 1;
+}
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi) {
+  /* Style adjustments for high resolution devices */
+}
+@media print {
+  /* line 165, ../sass/screen.sass */
+  * {
+    background: transparent !important;
+    color: black !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  /* line 171, ../sass/screen.sass */
+  a, a:visited {
+    text-decoration: underline;
+  }
+
+  /* line 174, ../sass/screen.sass */
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  /* line 177, ../sass/screen.sass */
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  /* line 185, ../sass/screen.sass */
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after {
+    content: "";
+  }
+
+  /* line 189, ../sass/screen.sass */
+  pre, blockquote {
+    border: 1px solid #999999;
+    page-break-inside: avoid;
+  }
+
+  /* line 194, ../sass/screen.sass */
+  thead {
+    display: table-header-group;
+  }
+
+  /* line 198, ../sass/screen.sass */
+  tr, img {
+    page-break-inside: avoid;
+  }
+
+  /* line 202, ../sass/screen.sass */
+  img {
+    max-width: 100% !important;
+  }
+
+  @page {
+    margin: 0.5cm;
+}
+
+  /* line 210, ../sass/screen.sass */
+  p, h2, h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  /* line 215, ../sass/screen.sass */
+  h2, h3 {
+    page-break-after: avoid;
+  }
+}

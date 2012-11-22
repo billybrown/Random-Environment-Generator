@@ -1,0 +1,218 @@
+@import compass/utilities
+@import compass/css3
+
+@import normalize
+@import html5base
+
+
+////////////////////////////////////////
+$web-black: #333
+$orange: #ffb80c
+$purple: #45009b
+
+////////////////////////////////////////
+.big-text
+  font-size: 50px
+  font-family: Georgia
+  text-align: center
+
+body
+  background: #42bb7b
+
+.main
+  background: darken($orange, 5%)
+  padding: 50px 0 80px
+  margin: 100px 0 0 0
+  position: relative
+
+.answer
+  padding: 20px 10%
+
+  input
+    @extend .big-text
+    background: none
+    border: none
+    border-bottom: 5px solid #000
+    width: 100%
+    padding: 10px 10px 8px
+    +transition(background .3s linear)
+
+    &:focus
+      outline: none
+      background: lighten($orange, 10%)
+
+#spokenword
+  @extend .big-text
+  position: absolute
+  top: 30px
+  opacity: 1
+  padding: 0 10%
+  width: 80%
+  +transition(opacity .3s linear)
+
+  &.hide
+    opacity: 0
+
+
+
+//grid
+
+.tile
+  width: 25px
+  height: 25px
+  float: left
+
+.sky
+  @extend .tile
+  background: #cffffa
+
+.tl
+  @extend .tile
+  background: url('../img/tree_tl.png')
+
+.t
+  @extend .tile
+  background: url('../img/tree_t.png')
+
+.tr
+  @extend .tile
+  background: url('../img/tree_tr.png')
+
+.ml
+  @extend .tile
+  background: url('../img/tree_ml.png')
+
+.mr
+  @extend .tile
+  background: url('../img/tree_mr.png')
+
+.m
+  @extend .tile
+  background: url('../img/tree_m.png')
+
+.m2
+  @extend .tile
+  background: url('../img/tree_m2.png')
+
+.bl
+  @extend .tile
+  background: url('../img/tree_bl.png')
+
+.b
+  @extend .tile
+  background: url('../img/tree_b.png')
+
+.bur
+  @extend .tile
+  background: url('../img/tree_bur.png')
+
+.bul
+  @extend .tile
+  background: url('../img/tree_bul.png')
+
+.bu
+  @extend .tile
+  background: url('../img/tree_bu.png')
+
+.br
+  @extend .tile
+  background: url('../img/tree_br.png')
+
+.cornerl
+  @extend .tile
+  background: url('../img/tree_cornerl.png')
+
+.cornerr
+  @extend .tile
+  background: url('../img/tree_cornerr.png')
+
+.cornerrb
+  @extend .tile
+  background: url('../img/tree_cornerl.png')
+  +rotate(180deg)
+
+.cornerlb
+  @extend .tile
+  background: url('../img/tree_cornerr.png')
+  +rotate(180deg)
+
+.row
+  +clearfix
+
+
+@import helper
+
+// ==========================================================================
+// EXAMPLE Media Queries for Responsive Design.
+// Theses examples override the primary ('mobile first') styles.
+// Modify as content requires.
+// ========================================================================== */
+
+@media only screen and (min-width: 35em) 
+  /* Style adjustments for viewports that meet the condition */
+
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi) 
+  /* Style adjustments for high resolution devices */
+
+
+// ==========================================================================
+// Print styles.
+// Inlined to avoid required HTTP connection: h5bp.com/r
+// ========================================================================== */
+
+@media print 
+  * 
+    background: transparent !important
+    color: #000 !important /* Black prints faster: h5bp.com/s */
+    box-shadow: none !important
+    text-shadow: none !important
+  
+  a, a:visited 
+    text-decoration: underline
+  
+  a[href]:after 
+    content: " (" attr(href) ")"
+
+  abbr[title]:after 
+    content: " (" attr(title) ")"
+  
+
+  //
+  // Don't show links for images, or javascript/internal links
+  ///
+
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after 
+    content: ""
+  
+
+  pre, blockquote 
+    border: 1px solid #999
+    page-break-inside: avoid
+  
+
+  thead 
+    display: table-header-group /* h5bp.com/t */
+  
+
+  tr, img 
+    page-break-inside: avoid
+  
+
+  img 
+    max-width: 100% !important
+  
+
+  @page 
+    margin: 0.5cm
+  
+
+  p, h2, h3 
+    orphans: 3
+    widows: 3
+  
+
+  h2, h3 
+    page-break-after: avoid
+  
+

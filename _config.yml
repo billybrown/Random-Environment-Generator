@@ -1,0 +1,4 @@
+exclude: ['Rakefile']
+
+#url: http://b.illbrown.com/videogames/tiles
+url: http://0.0.0.0:4000
